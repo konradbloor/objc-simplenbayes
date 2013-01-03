@@ -5,7 +5,7 @@
 @implementation SimpleNBayes
 
 
-// bitmask?
+//todo bitmask?
 - (id)initWithBinarized:(BOOL)ifBinarized debug:(BOOL)ifDebug logVocab:(BOOL)ifLogVocab assumeUniform:(BOOL)ifAssumeUniform  {
     self = [super init];
     if (self) {
