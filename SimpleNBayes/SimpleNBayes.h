@@ -1,13 +1,26 @@
-//
-//  SimpleNBayes.h
-//  SimpleNBayes
-//
-//  Created by Konrad Bloor on 28/12/2012.
-//  Copyright (c) 2012 Konrad Bloor. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
+@class BayesCategory;
+
 @interface SimpleNBayes : NSObject
+
+@property(nonatomic) BOOL debug;
+@property(nonatomic,retain) NSNumber *k; //some bayesian math thing?
+@property(nonatomic) BOOL binarized;
+@property(nonatomic) BOOL logVocab; //for smoothing, use log of vocab size, rather than vocab size
+@property(nonatomic) BOOL assumeUniform;
+@property(nonatomic,retain) NSMutableDictionary *vocab; //used to calculate vocab size
+@property(nonatomic,retain) NSMutableDictionary *data;
+
+
+- (id)initWithBinarized:(BOOL)ifBinarized debug:(BOOL)ifDebug logVocab:(BOOL)ifLogVocab assumeUniform:(BOOL)ifAssumeUniform;
+- (void)purgeLessThan:(int)x;
+- (BayesCategory *)getCategoryForName:(NSString *)categoryName;
+- (void)train:(NSArray *)tokens forCategory:(NSString *)category;
+- (Result *)classify:(NSArray *)tokens;
+- (NSNumber *)totalExamples;
+- (NSNumber *)vocabSize;
+- (NSDictionary *)calculateProbabilities:(NSArray *)tokens;
+- (NSNumber *)countForToken:(NSString *)token inCategory:(NSString *)categoryName;
 
 @end
