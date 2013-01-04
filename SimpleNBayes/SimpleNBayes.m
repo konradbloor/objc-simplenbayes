@@ -1,4 +1,4 @@
-#import <SimpleNBayes/Result.h>
+#import <SimpleNBayes/ClassificationResult.h>
 #import <SimpleNBayes/BayesCategory.h>
 #import "SimpleNBayes.h"
 
@@ -87,7 +87,7 @@
 
 }
 
-- (Result *)classify:(NSArray *)tokensToClassify {
+- (ClassificationResult *)classify:(NSArray *)tokensToClassify {
 
     if(self.debug)
     {
@@ -105,7 +105,7 @@
         NSLog(@"Results: %@",probabilities);
     }
 
-    return [[Result alloc] initWithClassificationResult:probabilities];
+    return [[ClassificationResult alloc] initWithClassificationResult:probabilities];
 
 }
 

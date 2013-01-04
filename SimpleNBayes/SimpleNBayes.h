@@ -17,7 +17,7 @@
 - (void)purgeLessThan:(int)x;
 - (BayesCategory *)getCategoryForName:(NSString *)categoryName;
 - (void)train:(NSArray *)tokens forCategory:(NSString *)category;
-- (Result *)classify:(NSArray *)tokens;
+- (ClassificationResult *)classify:(NSArray *)tokens;
 - (NSNumber *)totalExamples;
 - (NSNumber *)vocabSize;
 - (NSDictionary *)calculateProbabilities:(NSArray *)tokens;

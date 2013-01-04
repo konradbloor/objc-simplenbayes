@@ -10,10 +10,11 @@
 		BC2E514D3E025D9B5B3DEA86 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BC2E5BC3B25D6E73CD154412 /* LICENSE */; };
 		BC2E51BDDF78706F08B62038 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC2E5FF8087F3CFBB85C74C0 /* README.md */; };
 		BC2E52FFB64E8B1D7E2461A1 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BC2E5F5277C3F653E9AB2FA3 /* .gitignore */; };
-		BC2E554C273260C81BABCE97 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2E5CC18E5C7F79390CB2FF /* Result.m */; };
+		BC2E554C273260C81BABCE97 /* ClassificationResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2E5CC18E5C7F79390CB2FF /* ClassificationResult.m */; };
 		BC2E56F03A01F8C87345E807 /* BayesCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2E52F510F9A82B668DDC95 /* BayesCategory.m */; };
-		BC2E5968A0E37D3544DA7ED4 /* Result.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2E5E87A8CAC9C92F4EDD6E /* Result.h */; };
+		BC2E5968A0E37D3544DA7ED4 /* ClassificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2E5E87A8CAC9C92F4EDD6E /* ClassificationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC2E5A14FFD2B39EAB2CF5E5 /* BayesCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2E549E40A56611BD6BD3A0 /* BayesCategory.h */; };
+		C3354FC21696BA5D0017EF46 /* SimpleNBayes.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B8EC45168D7FD2006D9C4E /* SimpleNBayes.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C3B8EC39168D7FD2006D9C4E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8EC38168D7FD2006D9C4E /* Cocoa.framework */; };
 		C3B8EC43168D7FD2006D9C4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3B8EC41168D7FD2006D9C4E /* InfoPlist.strings */; };
 		C3B8EC47168D7FD2006D9C4E /* SimpleNBayes.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B8EC46168D7FD2006D9C4E /* SimpleNBayes.m */; };
@@ -38,8 +39,8 @@
 		BC2E52F510F9A82B668DDC95 /* BayesCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BayesCategory.m; sourceTree = "<group>"; };
 		BC2E549E40A56611BD6BD3A0 /* BayesCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BayesCategory.h; sourceTree = "<group>"; };
 		BC2E5BC3B25D6E73CD154412 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		BC2E5CC18E5C7F79390CB2FF /* Result.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
-		BC2E5E87A8CAC9C92F4EDD6E /* Result.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		BC2E5CC18E5C7F79390CB2FF /* ClassificationResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificationResult.m; sourceTree = "<group>"; };
+		BC2E5E87A8CAC9C92F4EDD6E /* ClassificationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationResult.h; sourceTree = "<group>"; };
 		BC2E5F5277C3F653E9AB2FA3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		BC2E5FF8087F3CFBB85C74C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
 		C3B8EC35168D7FD2006D9C4E /* SimpleNBayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleNBayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,8 +133,8 @@
 				C3B8EC3F168D7FD2006D9C4E /* Supporting Files */,
 				BC2E52F510F9A82B668DDC95 /* BayesCategory.m */,
 				BC2E549E40A56611BD6BD3A0 /* BayesCategory.h */,
-				BC2E5CC18E5C7F79390CB2FF /* Result.m */,
-				BC2E5E87A8CAC9C92F4EDD6E /* Result.h */,
+				BC2E5CC18E5C7F79390CB2FF /* ClassificationResult.m */,
+				BC2E5E87A8CAC9C92F4EDD6E /* ClassificationResult.h */,
 			);
 			path = SimpleNBayes;
 			sourceTree = "<group>";
@@ -174,8 +175,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3354FC21696BA5D0017EF46 /* SimpleNBayes.h in Headers */,
+				BC2E5968A0E37D3544DA7ED4 /* ClassificationResult.h in Headers */,
 				BC2E5A14FFD2B39EAB2CF5E5 /* BayesCategory.h in Headers */,
-				BC2E5968A0E37D3544DA7ED4 /* Result.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +293,7 @@
 			files = (
 				C3B8EC47168D7FD2006D9C4E /* SimpleNBayes.m in Sources */,
 				BC2E56F03A01F8C87345E807 /* BayesCategory.m in Sources */,
-				BC2E554C273260C81BABCE97 /* Result.m in Sources */,
+				BC2E554C273260C81BABCE97 /* ClassificationResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +463,7 @@
 				C3B8EC61168D7FD2006D9C4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3B8EC62168D7FD2006D9C4E /* Build configuration list for PBXNativeTarget "SimpleNBayesTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +472,7 @@
 				C3B8EC64168D7FD2006D9C4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

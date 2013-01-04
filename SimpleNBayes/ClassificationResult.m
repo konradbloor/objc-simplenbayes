@@ -1,7 +1,7 @@
-#import "Result.h"
+#import "ClassificationResult.h"
+#import "ClassificationEntry.h"
 
-
-@implementation Result {
+@implementation ClassificationResult {
 
 }
 - (id)initWithClassificationResult:(NSDictionary *)classificationResult {
@@ -32,6 +32,15 @@
     }
 
     return categoryWithHighestProbability;
+}
+
+- (NSArray *)sortedClassificationEntries {
+    NSMutableArray *resultArray = [[NSMutableArray alloc] initWithCapacity:[self.classificationResult count]];
+    for (NSString *category in [self.classificationResult allKeys]) {
+        [resultArray addObject:[[ClassificationEntry alloc] initWithName:category andProbability:[self.classificationResult objectForKey:category]]];
+    }
+    [resultArray sortUsingSelector:@selector(compare:)];
+    return resultArray;
 }
 
 @end
