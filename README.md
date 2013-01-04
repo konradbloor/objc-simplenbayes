@@ -10,8 +10,8 @@ me well previously, I thought it would be a worthwhile exercise to port it to Ob
 
 So to clarify, there is not really any original work here - this is a derivative work of oasic's nbayes project where
 I have applied mostly the same tests, and the functionality should be exactly the same, although I have changed where
-some functionality lies by factoring out some logic, or sometimes introducing functions to substitute when a ruby function
-that was used that had no counterpart that I could find in Foundation.
+some functionality lies by factoring out some logic, or sometimes I introduced a function to substitute for a ruby function
+that had no counterpart I could find in Foundation.
 
 To-do
 -----
