@@ -183,5 +183,10 @@
     return [category countForToken:token];
 }
 
+- (NSUInteger)totalCategories
+{
+    return [self.data count];
+}
+
 
 @end

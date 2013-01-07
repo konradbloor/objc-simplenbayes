@@ -15,6 +15,8 @@
 		BC2E5968A0E37D3544DA7ED4 /* ClassificationResult.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2E5E87A8CAC9C92F4EDD6E /* ClassificationResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC2E5A14FFD2B39EAB2CF5E5 /* BayesCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BC2E549E40A56611BD6BD3A0 /* BayesCategory.h */; };
 		C3354FC21696BA5D0017EF46 /* SimpleNBayes.h in Headers */ = {isa = PBXBuildFile; fileRef = C3B8EC45168D7FD2006D9C4E /* SimpleNBayes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C335501C1696C4030017EF46 /* ClassificationEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = C335501A1696C4030017EF46 /* ClassificationEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C335501D1696C4030017EF46 /* ClassificationEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C335501B1696C4030017EF46 /* ClassificationEntry.m */; };
 		C3B8EC39168D7FD2006D9C4E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B8EC38168D7FD2006D9C4E /* Cocoa.framework */; };
 		C3B8EC43168D7FD2006D9C4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3B8EC41168D7FD2006D9C4E /* InfoPlist.strings */; };
 		C3B8EC47168D7FD2006D9C4E /* SimpleNBayes.m in Sources */ = {isa = PBXBuildFile; fileRef = C3B8EC46168D7FD2006D9C4E /* SimpleNBayes.m */; };
@@ -43,6 +45,8 @@
 		BC2E5E87A8CAC9C92F4EDD6E /* ClassificationResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationResult.h; sourceTree = "<group>"; };
 		BC2E5F5277C3F653E9AB2FA3 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		BC2E5FF8087F3CFBB85C74C0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = file.md; path = README.md; sourceTree = "<group>"; };
+		C335501A1696C4030017EF46 /* ClassificationEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationEntry.h; sourceTree = "<group>"; };
+		C335501B1696C4030017EF46 /* ClassificationEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificationEntry.m; sourceTree = "<group>"; };
 		C3B8EC35168D7FD2006D9C4E /* SimpleNBayes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SimpleNBayes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B8EC38168D7FD2006D9C4E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C3B8EC3B168D7FD2006D9C4E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -130,11 +134,13 @@
 			children = (
 				C3B8EC45168D7FD2006D9C4E /* SimpleNBayes.h */,
 				C3B8EC46168D7FD2006D9C4E /* SimpleNBayes.m */,
-				C3B8EC3F168D7FD2006D9C4E /* Supporting Files */,
+				C335501A1696C4030017EF46 /* ClassificationEntry.h */,
+				C335501B1696C4030017EF46 /* ClassificationEntry.m */,
 				BC2E52F510F9A82B668DDC95 /* BayesCategory.m */,
 				BC2E549E40A56611BD6BD3A0 /* BayesCategory.h */,
 				BC2E5CC18E5C7F79390CB2FF /* ClassificationResult.m */,
 				BC2E5E87A8CAC9C92F4EDD6E /* ClassificationResult.h */,
+				C3B8EC3F168D7FD2006D9C4E /* Supporting Files */,
 			);
 			path = SimpleNBayes;
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3354FC21696BA5D0017EF46 /* SimpleNBayes.h in Headers */,
+				C335501C1696C4030017EF46 /* ClassificationEntry.h in Headers */,
 				BC2E5968A0E37D3544DA7ED4 /* ClassificationResult.h in Headers */,
 				BC2E5A14FFD2B39EAB2CF5E5 /* BayesCategory.h in Headers */,
 			);
@@ -294,6 +301,7 @@
 				C3B8EC47168D7FD2006D9C4E /* SimpleNBayes.m in Sources */,
 				BC2E56F03A01F8C87345E807 /* BayesCategory.m in Sources */,
 				BC2E554C273260C81BABCE97 /* ClassificationResult.m in Sources */,
+				C335501D1696C4030017EF46 /* ClassificationEntry.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

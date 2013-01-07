@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
+#import "ClassificationResult.h"
 
 @class BayesCategory;
 
@@ -19,6 +20,7 @@
 - (void)train:(NSArray *)tokens forCategory:(NSString *)category;
 - (ClassificationResult *)classify:(NSArray *)tokens;
 - (NSNumber *)totalExamples;
+- (NSUInteger)totalCategories;
 - (NSNumber *)vocabSize;
 - (NSDictionary *)calculateProbabilities:(NSArray *)tokens;
 - (NSNumber *)countForToken:(NSString *)token inCategory:(NSString *)categoryName;

@@ -160,4 +160,15 @@
 
 }
 
+- (void)testTrainingCategoriesIncreasesCategoryCount
+{
+    STAssertTrue(0U == [self.nbayes totalCategories], nil);
+
+    [self.nbayes train:[[NSArray alloc] initWithObjects:@"a", nil] forCategory:@"classA"];
+    [self.nbayes train:[[NSArray alloc] initWithObjects:@"b", nil] forCategory:@"classB"];
+
+    STAssertTrue(2U == [self.nbayes totalCategories], nil);
+}
+
+
 @end
